@@ -5,14 +5,14 @@ JOBS =[
   {
   'id':1,
   'title': 'Data Analyst',
-  'location': 'Bengaluru, India',
+  'location': 'Remote',
   'Salary': 'Negotiable '
     
   
 },
   {'id': 2,
   'title' : 'SDE I',
-  'location': 'Chennai , India',
+  'location': 'Benguluru , India',
   'salary':'Negotiable'},
    {'id': 3,
     'title' : 'SDE II',
@@ -20,8 +20,14 @@ JOBS =[
     'salary':'Negotiable'},
    {'id': 4,
     'title' : 'QA Analyst ',
-    'location': 'Hyderabad , India',
-    'salary':'Negotiable'}
+    'location': 'Benguluru , India',
+    'salary':'Negotiable'
+   },{
+     'id': 5,
+     'title' : 'Front End ',
+     'location': 'Remote',
+     'salary':'Negotiable'
+   }
 
 ]
 @app.route("/") # / represents  like home page
