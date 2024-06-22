@@ -18,18 +18,23 @@
     <title>Careers</title>
   </head>
   <body>
-    <div class='container' >
-    <h1 class = 'text-center mt-2 mb-4'> {{company_name}} Careers</h1>
-    <img class='img-fluid' id="banner" src='https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' height : 320 px>
-    <h2 class = ' text-center'>About {{company_name}}</h2>
-    <p class='lead' >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-      and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    {% include 'nav.html' %}
+    
+     <img class='img-fluid' id="banner" src='https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' height : 320 px>
+    <div class='container'  >
+    
+   
+    <h2 class = ' text-center' style='margin-bottom:16px;'>  {{company_name}}</h2>
+      <div class='row' >
+        <div class='col-md-6'>
+    <p class='lead'  >
+      In an era where technology evolves at an unprecedented pace, AeroAegis emerges as a vanguard of innovation, delivering unparalleled excellence and value-driven product solutions. Our distinctive blend of visionary leadership, cutting-edge products, and tailored services positions us uniquely as the partner of choice for businesses poised to excel in the digital age.
     </p>
+        </div>
+        <div class='d-none d-md-block col-6'>
+        <img src='https://images.unsplash.com/photo-1552581234-26160f608093?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29ya2luZ3xlbnwwfHwwfHx8MA%3D%3D' style='height:320px;'>
+          </div>
+      <div>
     <h2 class ='text-center mt-2 mb-4'>Open Positions</h2>
       <div>
         
@@ -45,10 +50,11 @@
         
       </div>
       <div class='text-center'> 
-    <button class='btn btn-primary btn-lg' >Contact Us</button> 
-    <p class='mt-4'> Copyright 2024, {{company_name}}</p> <? >
+    <a href="https://www.aeroaegis.com/contact-us" class='btn btn-primary btn-lg' >Contact Us</a> 
+     <? >
         </div>
       
       </div>
+    {% include 'footer.html' %}
   </body>
 </html>
